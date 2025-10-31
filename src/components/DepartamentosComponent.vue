@@ -9,6 +9,7 @@
                     <th>NOMBRE</th>
                     <th>LOCALIDAD</th>
                     <th></th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -20,6 +21,13 @@
                         <button class="btn btn-warning">
                             <router-link :to="'/detalles/'+dept.numero+'/'+dept.nombre+'/'+dept.localidad">
                                 Detalles
+                            </router-link>
+                        </button>
+                    </td>
+                    <td>
+                        <button class="btn btn-warning">
+                            <router-link :to="'/update/'+dept.numero">
+                                Update
                             </router-link>
                         </button>
                     </td>

@@ -3,6 +3,7 @@ import DepartamentosComponent from './components/DepartamentosComponent.vue';
 import HomeComponent from './components/HomeComponent.vue';
 import CreateDept from './components/CreateDept.vue';
 import DetallesDept from './components/DetallesDept.vue';
+import UpdateDept from './components/UpdateDept.vue';
 
 const rutas =
 [
@@ -21,6 +22,10 @@ const rutas =
     {
         path:"/detalles/:numero/:nombre/:localidad",
         component:DetallesDept
+    },
+    {
+        path:"/update/:numero",
+        component:UpdateDept
     }
 ]
 
