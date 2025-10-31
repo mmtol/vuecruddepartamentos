@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import DepartamentosComponent from './components/DepartamentosComponent.vue';
 import HomeComponent from './components/HomeComponent.vue';
+import CreateDept from './components/CreateDept.vue';
 
 const rutas =
 [
@@ -11,6 +12,10 @@ const rutas =
     {
         path:"/depts",
         component:DepartamentosComponent
+    },
+    {
+        path:"/create",
+        component:CreateDept
     }
 ]
 
