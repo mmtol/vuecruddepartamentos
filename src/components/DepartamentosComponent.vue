@@ -8,6 +8,7 @@
                     <th>NÚMERO</th>
                     <th>NOMBRE</th>
                     <th>LOCALIDAD</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -15,6 +16,13 @@
                     <td>{{dept.numero}}</td>
                     <td>{{dept.nombre}}</td>
                     <td>{{dept.localidad}}</td>
+                    <td>
+                        <button class="btn btn-warning">
+                            <router-link :to="'/detalles/'+dept.numero+'/'+dept.nombre+'/'+dept.localidad">
+                                Detalles
+                            </router-link>
+                        </button>
+                    </td>
                 </tr>
             </tbody>
         </table>
