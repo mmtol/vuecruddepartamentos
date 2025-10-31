@@ -10,6 +10,7 @@
                     <th>LOCALIDAD</th>
                     <th></th>
                     <th></th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -31,6 +32,13 @@
                             </router-link>
                         </button>
                     </td>
+                    <td>
+                        <button class="btn btn-warning">
+                            <router-link :to="'/delete/'+dept.numero">
+                                Delete
+                            </router-link>
+                        </button>
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -49,7 +57,8 @@
         {
             return{
                 depts:[],
-                status:false
+                status:false,
+                numDelete:0
             }
         },
         methods:

@@ -55,4 +55,17 @@ export default class ServicioDepts
             })
         })
     }
+
+    deleteDept(num)
+    {
+        return new Promise(function(resolve)
+        {
+            var url = Global.apiDepts;
+            var endPoint = "api/Departamentos/"+num;
+            axios.delete(url+endPoint).then(response =>
+            {
+                resolve(response);
+            })
+        })
+    }
 }
