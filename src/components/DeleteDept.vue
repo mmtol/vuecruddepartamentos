@@ -2,7 +2,7 @@
     <div>
         <h1>DELETE</h1>
         <h2>Va a deletear el departamento {{num}}</h2>
-        <button @click="deleteDept">Delete</button>
+        <button class="btn btn-warning" @click="deleteDept">Delete</button>
     </div>
 </template>
 
