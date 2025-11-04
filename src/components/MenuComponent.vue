@@ -16,14 +16,6 @@
                 <li class="nav-item">
                     <router-link class="dropdown-item" to="/create">Create</router-link>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Lista
-                    </a>
-                    <ul class="dropdown-menu">
-                        
-                    </ul>
-                </li>
             </ul>
             </div>
         </div>
